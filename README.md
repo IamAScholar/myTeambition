@@ -1,4 +1,2 @@
 # myTeambition
-ddsdgasdg
-dddddd
-dsdg
+
