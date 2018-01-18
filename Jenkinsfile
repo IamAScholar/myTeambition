@@ -16,11 +16,20 @@ pipeline {
             }
         }
         stage('Test') {
-            steps {
-                echo 'Testing...'
-                lds
-                // sh 'npm test'
-            }
+             steps {
+                    script {
+                        switch(env.gitlabActionType) {
+                            case 'PUSH':
+                                echo "PUSH Event"
+                                break
+                            case 'MERGE':
+                                echo "MERGE Event"
+                                break
+                            default:
+                                echo "Default Value Event"
+                        }
+                    }
+                }
         }
     }
 }
