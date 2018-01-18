@@ -1,5 +1,1 @@
 # myTeambition
-
-dsd
-dsdgasg
-sdgasgas
